@@ -91,5 +91,17 @@ input[type="submit"]{
 
 footer{
     bottom: 0;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    right: 12%;
+}
+
+ul li{
+    display: inline-block;
 }
 
