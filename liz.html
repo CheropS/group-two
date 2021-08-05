@@ -10,21 +10,23 @@
 </head>
 
 <body>
-    <form>
-        <!-- contact details -->
-        <fieldset>
-            <legend>Contact Info</legend>
-            <input type="email" placeholder="Email" required />
-            <input type="telephone" placeholder="phone number" required />
-        </fieldset>
-        <!-- preffered -->
-        <p>How would you like to be contacted?</p>
-        <select>
-            <option>By email</option>
-            <option>By phone</option>
-        </select>
-        <input type="submit" value="Apply" />
-    </form>
+    <div class="wrapper">
+        <form>
+            <!-- contact details -->
+            <div class="input-fields">
+                <legend>Contact Info</legend>
+                <input type="email" placeholder="Email" required />
+                <input type="telephone" placeholder="phone number" required />
+            </div>
+            <!-- preffered -->
+            <p>How would you like to be contacted?</p>
+            <select>
+                <option>By email</option>
+                <option>By phone</option>
+            </select>
+            <input type="submit" value="Apply" />
+        </form>
+    </div>
     <script src="script/jquery-3.6.0.js"></script>
     <script src="script/script.js"></script>
 </body>
