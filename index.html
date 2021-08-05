@@ -17,7 +17,7 @@
 
     <!-- our packages section -->
     <section class="packages" id="packages">
-        <h1 class="b-text">OUR PACKAGES</h1><br><br><br>
+        <h3 class="b-text">OUR PACKAGES</h3><br><br><br>
         <div class="col-md-12">
             <div class="row">
                 <figure class="col-md-4">
@@ -59,8 +59,119 @@
 
 
     <!-- the form section (services) -->
-    <section>
-        
+    <section class="service" id="services">
+        <h3>OUR SERVICES</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-list">
+                    <form class="form-group">
+                        <div class="form-group">
+                            <label for="Name">Your Name</label>
+                            <input type="text" class="form-control" id="name" required>
+    
+                        </div>
+    
+    
+                        <div class="form-group">
+                            <label for="select">Identify pest Type</label><br>
+                            <select class="browser-default form-select-md mb-4 name form-control" id="pest" required>
+                                <option value="">Pest</option>
+                                <option value="termites">termites</option>
+                                <option value="mice">mice</option>
+                                <option value="coackroaches">Coackroches</option>
+                                <option value="rats">rats</option>
+                                <option value="textile">texttile pests</option>
+                                <option value="bedbugs">bedbugs</option>
+                                <option value="ants">ants</option>
+                                <option value="flies">flies</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select">Choose Residency</label><br>
+                            <select class="browser-default form-select-lg mb-4 name form-control" id="location" required>
+                                <option value="">location</option>
+                                <option value="nairobi">Nairobi</option>
+                                <option value="kitengela">Kitengela</option>
+                                <option value="utawala">Utawala</option>
+                                <option value="kasarani">Kasarani</option>
+                                <option value="kajiado">Kajiado</option>
+                                <option value="limuru">Limuru</option>
+    
+                            </select>
+                        </div>
+    
+    
+                        <label for="number-of-rooms">No of rooms</label>
+                        <input type="number" id="numbers" class="form-control" min="1" required>
+    
+                        <button type="button" class="btn " id="order" onclick="submitOrder()">Purchase</button><br>
+    
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+    
+                <div class="order-list">
+                    <!-- table to display clients requests -->
+                    <table class="table table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Number</th>
+                                <th scope="col">Pest type</th>
+                                <th scope="col">Location</th>
+                                 <th scope="col">Total amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+    
+                                <td class="no"></td>
+                                <td class="pname"></td>
+                                <td class="location"></td>
+                                <td class="total"></td>
+    
+                            </tr>
+    
+                        </tbody>
+                    </table>
+    
+                    <button type="button" id="checkout" class="btn btn-lg">confirmRequest</button><br><br>
+    
+                </div>
+            </div>
+        </div>
+    
+        <div class="directions">
+            <form>
+                <div class="form-group">
+                    <label for="Estate">Estate</label>
+                    <input type="text" class="form-control" id="place" required>
+    
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone-Number</label>
+                    <input type="number" class="form-control" id="phone" required min="1" placeholder="+2547******">
+                </div>
+               
+                <button type="button" class="btn" id="submit-details" onclick="confirmFumigation()">Submit</button><br><br>
+            </form>
+    
+        </div>
+        <!-- feedback statement from pest control hq-->
+        <div class="feedback">
+            <p>Dear <span class="customer"></span></p>
+            <p>
+                <br> The Total amount of fumigation is Ksh. <span class="delivery-total"></span>
+                <br>You will be reached through <span class="phone-no"></span> as the number you
+                submitted.<br>
+                Thank you for choosing us! We Debug for you.
+            </p>
+        </div><br>
+    
+    
+    
+    
+        </div>
     </section>
 
 
@@ -68,6 +179,24 @@
   
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="lib/jquery-3.6.0.js"></script>
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
