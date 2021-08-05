@@ -1,0 +1,10 @@
+.align-self-start {
+    background-color: #0D3673;
+    width: 40%;
+    color: white;
+    padding-right: 40px;
+
+}
+.align-self-end {
+    padding-left: 30px;
+}
