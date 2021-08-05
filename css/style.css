@@ -1,6 +1,9 @@
 *{ 
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 
 }
 
@@ -10,11 +13,48 @@
 .packages p{
     color: white;
 }
-.packages h1 {
+.packages h3 {
+    
     margin-top: 30px;
     text-align: center;
 }
 
+figcaption.b-text{
+    color: white;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+
 figcaption {
     margin-top: 20px;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    width: 50%;
+}
+
+#order{
+    color: crimson;
+}
+.order-list{
+    display: none;
+}
+.directions{
+    display: none;
+}
+.feedback{
+    display: none;
+}
+
+.service{
+    background-color:goldenrod;
+    padding-left: 600px;
+}
+
+.service h3{
+    text-align: center;
+    justify-content: center;
 }
