@@ -43,8 +43,9 @@ figure img{
   
 }
 .item h3{
-  color: blue;
+  color: rgb(146, 106, 106);
   text-align: center;
+  text-shadow: rgb(165, 112, 42);
 }
 
 @keyframes slider{
