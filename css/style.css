@@ -1,12 +1,16 @@
 /* base form styles */
 
 body{
-    background-color: rgba(0, 238, 255, 0.425);
+    
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .wrapper{
+    background-image: url("../photos/cockroach.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
     position: absolute;
     top: 20%;
     transform: translateY(-20%);
@@ -15,6 +19,7 @@ body{
 }
 
 form{
+    
     max-width: 550px;
     margin: 0 auto;
     color: rgba(0, 0, 0, 0.8);
@@ -73,8 +78,7 @@ select{
     border: 2px solid #fff;
     width: 280px;
 }
-
-input[type="submit"]{
+.submit{
     background: #39b7dd;
     text-align: center;
     padding: 15px;
